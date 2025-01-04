@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NNets</title>
+    <link rel="stylesheet" href="./style_05.css">
+</head>
+<body>
+    <h1>Neural Network Visualization</h1>
+    <form id="netForm">
+        <div class="form-group">
+            <label for="inputNodes">Input Nodes:</label>
+            <input type="number" id="inputNodes" name="inputNodes" min="1" max="50" class="nodes">
+        </div>
+        <div class="form-group">
+            <label for="hiddenLayers">Hidden Layers:</label>
+            <input type="number" id="hiddenLayers" name="hiddenLayers" min="1" max="10" class="nodes">
+        </div>
+        <div id="hiddenNodesContainer">
+            <!-- Hidden nodes input fields will be inserted here -->
+        </div>
+        <div class="form-group">
+            <label for="outputNodes">Output Nodes:</label>
+            <input type="number" id="outputNodes" name="outputNodes" min="1" max="50" class="nodes">
+        </div>
+        <input type="submit" value="Submit" id="mySubmit">
+    </form>
+    <div id="netContainer">
+        <!-- Neural network visualization will be inserted here -->
+    </div>
+    <script src="./script_10.js"> </script>
+</body>
+</html>
